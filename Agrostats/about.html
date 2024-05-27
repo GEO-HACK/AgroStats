@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      a {
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+          color: #f1c40f;
+          text-decoration: underline;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <span style="color: white; font-weight: bolder">AGROSTATS</span>
+      <ul
+        style="
+          display: flex;
+          justify-content: space-around;
+          list-style: none;
+          gap: 80px;
+          color: white;
+        "
+      >
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <div class="about-container">
+      <section class="about-section">
+        <h1>About Us</h1>
+
+        <p class="about">
+          We aim to empower farmers to focus on what they do best while we
+          handle the complexities of data management and certification
+          processes. Our goal is to support sustainable farming practices and
+          improve overall farm productivity.
+        </p>
+      </section>
+    </div>
+    <div class="mission-vision">
+      <div class="mission">
+        <h2>Our Mission</h2>
+        <p>
+          Our mission is to provide farmers with the tools and support they need
+          to achieve sustainable farming practices. We believe that by
+          empowering farmers, we can help them improve their productivity and
+          profitability.
+        </p>
+      </div>
+      <div class="vision">
+        <h2>Our Vision</h2>
+        <p>
+          Our vision is to create a world where farmers have access to the
+          resources they need to succeed. We believe that by supporting farmers,
+          we can help create a more sustainable and equitable food system for
+          all.
+        </p>
+      </div>
+    </div>
+
+    <div class="team">
+      <div class="team-description">
+        <h2>Meet The Team</h2>
+        <p>
+          Our team is made up of passionate individuals who are dedicated to
+          supporting farmers in their journey to sustainable farming. We believe
+          that by providing the right tools and support, we can help farmers
+          achieve their goals.
+        </p>
+
+        <p>Our team is made up of the following individuals:</p>
+      </div>
+
+      <div class="team-images">
+        <div class="team-member">
+          <img src="images/brijo.jpg" alt="Team Member 1" />
+          <h3>BRIDGET WANJIRU</h3>
+          <p>
+            Group Lead <br />
+            requirements analyst
+          </p>
+        </div>
+        <div class="team-member">
+          <img src="images/Geoffrey.jpg" alt="Team Member 1" />
+          <h3>GEOFFREY KIRUMBA</h3>
+          <p>Back-end developer <br /></p>
+        </div>
+        <div class="team-member">
+          <img src="images/brijo.jpg" alt="Team Member 1" />
+          <h3>BRIDGET WANJIRU</h3>
+          <p>
+            Group Lead <br />
+            requirements analyst
+          </p>
+        </div>
+        <div class="team-member">
+          <img src="images/brijo.jpg" alt="Team Member 1" />
+          <h3>BRIDGET WANJIRU</h3>
+          <p>
+            Group Lead <br />
+            requirements analyst
+          </p>
+        </div>
+        <div class="team-member">
+          <img src="images/brijo.jpg" alt="Team Member 1" />
+          <h3>BRIDGET WANJIRU</h3>
+          <p>
+            Group Lead <br />
+            requirements analyst
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section logo-slogan">
+          <img src="images/logo.jpg" alt="Company Logo" class="footer-logo" />
+          <p class="footer-slogan">Effortless farming, seamless tracking</p>
+        </div>
+        <div class="footer-section links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section contact">
+          <h3>Contact Us</h3>
+          <p>Email: murithibridget@gmail.com</p>
+          <p>Phone: +254 113368525</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Farmer Services | Designed by YourCompany</p>
+      </div>
+    </footer>
+    <script>
+      ScrollReveal({
+        origin: "top",
+        distance: "40px",
+        duration: 1000,
+        reset: true,
+      }).reveal(".about-section", { delay: 300 });
+      ScrollReveal({
+        origin: "left",
+        distance: "100px",
+        duration: 2000,
+        reset: true,
+      }).reveal(".mission", { delay: 500 });
+      ScrollReveal({
+        origin: "right",
+        distance: "100px",
+        duration: 2000,
+        reset: true,
+      }).reveal(".vision", { delay: 500 });
+    </script>
+  </body>
+</html>
