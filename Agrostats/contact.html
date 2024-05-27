@@ -5,36 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
-    <style>
-      a {
-        color: white;
-        text-decoration: none;
-
-        &:hover {
-          color: #f1c40f;
-          text-decoration: underline;
-        }
-      }
-    </style>
+    <script
+      src="https://kit.fontawesome.com/d78c049802.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <nav>
-      <span style="color: white; font-weight: bolder">AGROSTATS</span>
-      <ul
-        style="
-          display: flex;
-          justify-content: space-around;
-          list-style: none;
-          gap: 80px;
-          color: white;
-        "
-      >
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </nav>
+    <div>
+      <nav class="navbar">
+        <h3>AGROSTATS</h3>
+        <a href="javascript:void(0);" class="toggle-button" id="navbar-toggle">
+          <span class="bar"><i class="fa-solid fa-bars"></i></span>
+        </a>
+        <div class="navbar-links" id="navbar-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
 
     <div class="contact-container">
       <h1>Contact Us</h1>
@@ -64,6 +56,11 @@
           <img src="images/logo.jpg" alt="Company Logo" class="footer-logo" />
           <p class="footer-slogan">Effortless farming, seamless tracking</p>
         </div>
+        <div class="partners">
+          <h3>In partnership with</h3>
+          <img src="images/JKUAT.png" alt="Partner 1" />
+          <img src="images/JHUB Africa.png" alt="Partner 2" />
+        </div>
         <div class="footer-section links">
           <h3>Quick Links</h3>
           <ul>
@@ -80,7 +77,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2024 Farmer Services | Designed by YourCompany</p>
+        <p>&copy; 2024 Farmer Services</p>
       </div>
     </footer>
   </body>

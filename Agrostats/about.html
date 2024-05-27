@@ -6,46 +6,39 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
-    <style>
-      a {
-        color: white;
-        text-decoration: none;
-
-        &:hover {
-          color: #f1c40f;
-          text-decoration: underline;
-        }
-      }
-    </style>
+    <script
+      src="https://kit.fontawesome.com/d78c049802.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <nav>
-      <span style="color: white; font-weight: bolder">AGROSTATS</span>
-      <ul
-        style="
-          display: flex;
-          justify-content: space-around;
-          list-style: none;
-          gap: 80px;
-          color: white;
-        "
-      >
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </nav>
+    <div>
+      <nav class="navbar">
+        <h3>AGROSTATS</h3>
+        <a href="javascript:void(0);" class="toggle-button" id="navbar-toggle">
+          <span class="bar"><i class="fa-solid fa-bars"></i></span>
+        </a>
+        <div class="navbar-links" id="navbar-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
 
     <div class="about-container">
       <section class="about-section">
         <h1>About Us</h1>
 
         <p class="about">
-          We aim to empower farmers to focus on what they do best while we
-          handle the complexities of data management and certification
-          processes. Our goal is to support sustainable farming practices and
-          improve overall farm productivity.
+          Our dedicated team is passionate about empowering farmers with
+          innovative tools to streamline operations, achieve certification
+          goals, and enhance productivity. We believe in the transformative
+          power of technology in agriculture and are committed to making it
+          accessible to all farmers
         </p>
       </section>
     </div>
@@ -53,19 +46,20 @@
       <div class="mission">
         <h2>Our Mission</h2>
         <p>
-          Our mission is to provide farmers with the tools and support they need
-          to achieve sustainable farming practices. We believe that by
-          empowering farmers, we can help them improve their productivity and
-          profitability.
+          Our mission is to revolutionize the agricultural sector by providing a
+          robust digital platform that simplifies record-keeping and compliance
+          tracking. We aim to empower farmers to focus on what they do best
+          while we handle the complexities of data management and certification
+          processes.
         </p>
       </div>
       <div class="vision">
         <h2>Our Vision</h2>
         <p>
-          Our vision is to create a world where farmers have access to the
-          resources they need to succeed. We believe that by supporting farmers,
-          we can help create a more sustainable and equitable food system for
-          all.
+          We envision a world where every farmer, regardless of size or
+          location, has the tools and knowledge needed to succeed. By
+          simplifying record-keeping and compliance tracking, we aim to create a
+          more efficient and sustainable agricultural industry.
         </p>
       </div>
     </div>
@@ -130,6 +124,11 @@
           <img src="images/logo.jpg" alt="Company Logo" class="footer-logo" />
           <p class="footer-slogan">Effortless farming, seamless tracking</p>
         </div>
+        <div class="partners">
+          <h3>In partnership with</h3>
+          <img src="images/JKUAT.png" alt="Partner 1" />
+          <img src="images/JHUB Africa.png" alt="Partner 2" />
+        </div>
         <div class="footer-section links">
           <h3>Quick Links</h3>
           <ul>
@@ -149,25 +148,6 @@
         <p>&copy; 2024 Farmer Services | Designed by YourCompany</p>
       </div>
     </footer>
-    <script>
-      ScrollReveal({
-        origin: "top",
-        distance: "40px",
-        duration: 1000,
-        reset: true,
-      }).reveal(".about-section", { delay: 300 });
-      ScrollReveal({
-        origin: "left",
-        distance: "100px",
-        duration: 2000,
-        reset: true,
-      }).reveal(".mission", { delay: 500 });
-      ScrollReveal({
-        origin: "right",
-        distance: "100px",
-        duration: 2000,
-        reset: true,
-      }).reveal(".vision", { delay: 500 });
-    </script>
+    <script src="javascript.js"></script>
   </body>
 </html>

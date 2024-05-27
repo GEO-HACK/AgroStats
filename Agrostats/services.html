@@ -5,85 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
-    <style>
-      a {
-        color: white;
-        text-decoration: none;
-
-        &:hover {
-          color: #f1c40f;
-          text-decoration: underline;
-        }
-      }
-    </style>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script
+      src="https://kit.fontawesome.com/d78c049802.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div>
-      <nav>
-        <span style="color: white; font-weight: bolder">AGROSTATS</span>
-        <ul
-          style="
-            display: flex;
-            justify-content: space-around;
-            list-style: none;
-            gap: 80px;
-            color: white;
-          "
-        >
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
+      <nav class="navbar">
+        <h3>AGROSTATS</h3>
+        <a href="javascript:void(0);" class="toggle-button" id="navbar-toggle">
+          <span class="bar"><i class="fa-solid fa-bars"></i></span>
+        </a>
+        <div class="navbar-links" id="navbar-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
       </nav>
     </div>
+
+    <div class="hero-service">
+      <h1>Our Services</h1>
+    </div>
     <div class="services-content">
-      <div class="services-item">
-        <img src="images/tracking.jpg" alt="Tracking Image" />
+      <div class="services-item" style="background-color: #f0f8ff">
         <div class="services-text">
           <h3>Tracking</h3>
           <p>
-            We provide a platform for farmers to keep record of all their
-            agricultural activities so that they can track their progress.
+            Our Tracking service empowers farmers with comprehensive tools to
+            monitor and record all agricultural activities. Using GPS field
+            mapping, real-time weather data, and pest monitoring, farmers can
+            maintain detailed logs, analyze progress, and make informed
+            decisions. This service enhances productivity, supports sustainable
+            practices, and ensures efficient resource management, ultimately
+            leading to higher yields and cost savings.
           </p>
         </div>
+        <div class="services-image">
+          <img src="images/tracking.jpg" alt="Tracking Image" />
+        </div>
       </div>
-      <div class="services-item">
-        <img src="images/compliance.jpg" alt="Compliance Image" />
+      <div class="services-item reverse" style="background-color: #f5f5dc">
         <div class="services-text">
           <h3>Compliance</h3>
           <p>
-            Allows farmers to keep track of all the compliance requirements and
-            ensure they are met. This provides proof for certification.
+            Our Project aims at helping farmers meet regulatory requirements and
+            industry standards through robust tracking and comprehensive
+            record-keeping via the following channels: keeping detailed logs of
+            a farmer's agricultural activities, providing alerts and
+            notifications on any ongoing certification/training programs,
+            providing comprehensive reports based on the users data that can be
+            used as audit trails to ensure accountability.
           </p>
         </div>
+        <div class="services-image">
+          <img src="images/compliance.jpg" alt="Compliance Image" />
+        </div>
       </div>
-      <div class="services-item">
-        <img src="images/medal.png" alt="Certification Image" />
+      <div class="services-item" style="background-color: #faebd7">
         <div class="services-text">
-          <h3>Certification</h3>
+          <h3>Verification</h3>
           <p>
-            Farmers are awarded certificates once it is proven that they have
-            met all the requirements.
+            As much as AgroStats focuses on providing farmer's with tools to
+            record and store their real time farm data, we also aim at linking
+            them with compliance standards from various certification issuing
+            bodies to ensure that the data provided in our application is
+            accurate and can be reviewed to assess that the farmers has met the
+            required standards.
           </p>
         </div>
+        <div class="services-image">
+          <img src="images/verification.jpg" alt="Certification Image" />
+        </div>
       </div>
-      <div class="services-item">
-        <img src="images/networking.jpg" alt="Networking Image" />
+      <div class="services-item reverse" style="background-color: #ffe4e1">
         <div class="services-text">
           <h3>Networking</h3>
           <p>
-            Once a farmer is rightfully certified, he/she is privileged to
-            access a premium market where they can sell their produce.
+            We aim at intergrating community forums where farmers can discuss
+            common challenges and experiences ,Hosting networking events and
+            webinars that will be for training farmers on the certification and
+            approval process and on matters dealing with usage of the app and
+            advisory services that will provide access to experts in the
+            agricultural sector to provide mentorship and information platforms
+            to the farmers.
           </p>
+        </div>
+        <div class="services-image">
+          <img src="images/networking.webp" alt="Networking Image" />
         </div>
       </div>
     </div>
+
     <footer>
       <div class="footer-content">
         <div class="footer-section logo-slogan">
           <img src="images/logo.jpg" alt="Company Logo" class="footer-logo" />
           <p class="footer-slogan">Effortless farming, seamless tracking</p>
+        </div>
+        <div class="partners">
+          <h3>In partnership with</h3>
+          <img src="images/JKUAT.png" alt="Partner 1" />
+          <img src="images/JHUB Africa.png" alt="Partner 2" />
         </div>
         <div class="footer-section links">
           <h3>Quick Links</h3>
@@ -104,5 +132,7 @@
         <p>&copy; 2024 Farmer Services | Designed by YourCompany</p>
       </div>
     </footer>
+
+    <script src="javascript.js"></script>
   </body>
 </html>
