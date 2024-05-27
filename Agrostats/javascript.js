@@ -153,11 +153,19 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Navbar toggle
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
   const toggleButton = document.getElementById("navbar-toggle");
   const navbarLinks = document.getElementById("navbar-links");
+  const content = document.getElementById("content");
 
   toggleButton.addEventListener("click", function () {
     navbarLinks.classList.toggle("active");
+    content.classList.toggle("blur"); // Toggle blur effect on the content
+  });
+
+  // Remove blur when a link is clicked
+  navbarLinks.addEventListener("click", function () {
+    navbarLinks.classList.remove("active");
+    content.classList.remove("blur");
   });
 });
