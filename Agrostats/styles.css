@@ -171,7 +171,9 @@ nav {
   margin-right: 2px;
 }
 .content {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -284,11 +286,12 @@ nav {
   /* margin: 50px 200px; */
   z-index: 1; /* Ensure the container stays above the background */
   position: relative;
-  width: 100%;
+  width: 100vw;
   background-image: url("images/background.jpg");
   background-position: center;
   background-size: cover;
   height: 400px;
+
   background-repeat: no-repeat;
 }
 
@@ -498,6 +501,7 @@ html {
     margin-right: 35px;
     margin-bottom: 20px;
     align-items: center;
+
     color: white;
   }
   .hero-buttons {
@@ -891,6 +895,17 @@ footer {
 }
 
 @media (max-width: 800px) {
+  /*body*/
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* overflow: hidden; */
+    position: relative;
+  }
   .services-item {
     flex-direction: column;
   }
@@ -920,7 +935,7 @@ footer {
     width: 250px; /* Desired width of the menu */
     height: 100%;
     background: rgba(3, 48, 1, 0.946);
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     transition: left 1s ease;
     z-index: 1001; /* Ensure it stays above the rest of the content */
   }
@@ -932,15 +947,15 @@ footer {
 
   .navbar-links ul {
     flex-direction: column;
-    padding: 0;
-    margin: 0;
+    /* padding: 0;
+    margin: 0; */
     width: 100%;
   }
 
   .navbar-links ul li {
     width: 100%;
     text-align: left;
-    padding: 10px 0;
+    padding: 5px 0;
   }
 
   .navbar-links ul li a {
@@ -952,5 +967,208 @@ footer {
   .blur #content {
     filter: blur(5px);
     transition: filter 0.3s ease;
+  }
+  /* the responsive about section */
+  .main-about {
+    flex-direction: column;
+    align-items: center;
+    max-height: none;
+    height: auto;
+  }
+
+  .main-about h3 {
+    margin: 20px 0;
+    padding-top: 20px;
+    margin-left: 0;
+  }
+
+  .main-about-p {
+    margin: 20px 0;
+    width: 90%;
+    margin-left: 0;
+  }
+
+  .main-about-p p {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .main-services {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    /* height: 20%; */
+    color: rgba(3, 48, 1, 0.946);
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: "Courier New", Courier, monospace;
+
+    /* background-color: azure; */
+    border-radius: 20px;
+    max-height: 500px;
+  }
+  /* the progress responsive */
+  .progress {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 80%;
+    color: rgb(237, 241, 238);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    /* background-color: rgb(4, 85, 15); */
+    border: 2px solid rgb(2, 70, 11);
+    border-radius: 10px;
+    max-height: 80%;
+    margin: 30px auto;
+    width: 80%;
+    /* padding: 20px 20px; */
+  }
+  .progress .progress-bar {
+    background-color: rgba(3, 48, 1, 0.946);
+    width: 80%;
+    /* height: 80%; */
+    border-radius: 10px;
+    justify-content: space-around;
+    margin: 20px auto;
+    align-items: center;
+    display: flex;
+  }
+
+  .main-services h2 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .main-services p {
+    font-size: 20px;
+    font-family: "Courier New", Courier, monospace;
+    margin-left: 80px;
+    margin-right: 35px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .content {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    justify-content: center;
+    /* padding: auto 35px; */
+    align-items: center;
+    height: fit-content;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "inknut antiqua", serif;
+    text-align: center;
+    /* background-color: azure; */
+    border-radius: 20px;
+    /* max-height: 500px; */
+  }
+  .content .service {
+    margin: 40px;
+    width: 40vh;
+    /* padding: 10px; */
+    border: 2px solid rgb(2, 70, 11);
+    border-radius: 10px;
+    background-color: rgba(3, 48, 1, 0.946);
+  }
+  .content .service a {
+    text-decoration: none;
+    color: #f1c40f;
+  }
+  .content .service:hover {
+    background-color: rgba(3, 48, 1, 0.946);
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  .content .service img {
+    height: 150px;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .content .service p {
+    font-size: 20px;
+    font-weight: lighter;
+    font-style: normal;
+    font-family: "inknut antiqua", serif;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  footer {
+    position: relative;
+  }
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .footer-section ul {
+    gap: 10px;
+  }
+
+  .partners {
+    flex-direction: column;
+  }
+
+  .partners img {
+    margin: 5px 0;
+  }
+}
+/*about page*/
+@media (max-width: 800px) {
+  .mission-vision {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 50%;
+    background-color: #dff6dd;
+    margin-top: 250px;
+  }
+  .mission,
+  .vision {
+    margin: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: fit-content;
+    font-size: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+  }
+
+  .team {
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px 0;
+    margin-top: 250px;
+  }
+  .team-images {
+    grid-template-columns: 1fr;
+    /* display: block;
+    margin-left: 100px; */
+    gap: 20px;
+    grid-area: auto;
   }
 }
