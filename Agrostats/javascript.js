@@ -37,6 +37,13 @@ ScrollReveal({
   duration: 2000,
   reset: true,
 }).reveal(".vision", { delay: 500 });
+//Team scroll reveal
+ScrollReveal({
+  origin: "bottom",
+  distance: "40px",
+  duration: 1000,
+  reset: true,
+}).reveal(".team-member", { delay: 500 });
 
 //services scroll reveal
 ScrollReveal().reveal(".hero-service", { delay: 500 });
