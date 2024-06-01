@@ -1245,5 +1245,14 @@ footer {
   .team-member {
     margin-left: 100px;
   }
+  .services-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+
+    padding: 0px;
+  }
 }
 /*about page*/
