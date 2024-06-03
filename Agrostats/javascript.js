@@ -38,12 +38,29 @@ ScrollReveal({
   reset: true,
 }).reveal(".vision", { delay: 500 });
 //Team scroll reveal
-ScrollReveal({
-  origin: "bottom",
-  distance: "40px",
-  duration: 1000,
-  reset: true,
-}).reveal(".team-member", { delay: 500 });
+// Function to initialize ScrollReveal
+function initializeScrollReveal() {
+  ScrollReveal({
+    origin: "bottom",
+    distance: "40px",
+    duration: 1000,
+    reset: true,
+  }).reveal(".team-member", { delay: 500 });
+}
+
+// Check if the screen width is greater than 768px
+if (window.innerWidth > 768) {
+  initializeScrollReveal();
+}
+
+// Optional: Add event listener to handle window resizing
+window.addEventListener("resize", function () {
+  if (window.innerWidth > 768) {
+    initializeScrollReveal();
+  } else {
+    ScrollReveal().clean(".team-member"); // Clean the reveal effects if width is less than 768px
+  }
+});
 
 //services scroll reveal
 ScrollReveal().reveal(".hero-service", { delay: 500 });

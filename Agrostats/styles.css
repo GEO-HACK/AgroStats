@@ -142,24 +142,6 @@ nav {
   width: 400px;
 }
 
-/* .button {
-  background-color: #0f0f0f;
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: flex;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  width: 100px;
-  border-radius: 12px;
-  margin-left: 150px;
-  margin-right: 10px;
-  margin-bottom: 20px;
-} */
-
 .container .button:hover {
   background-color: #023504;
   color: white;
@@ -177,7 +159,8 @@ nav {
   gap: 20px;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 90vh;
+  margin-top: 0;
   color: white;
   font-size: 30px;
   font-weight: bold;
@@ -190,6 +173,7 @@ nav {
 .content .service {
   margin: 40px;
   width: 40vh;
+  height: 420px;
   /* padding: 10px; */
   border: 2px solid rgb(2, 70, 11);
   border-radius: 10px;
@@ -304,7 +288,7 @@ nav {
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)
   );
-  font-size: 20px;
+  font-size: 25px;
   font-weight: lighter;
   font-family: "poppins";
   text-align: center;
@@ -317,6 +301,9 @@ nav {
 
   border-radius: 8px;
   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); */
+}
+.about {
+  font-size: 20px;
 }
 .main-about {
   display: flex;
@@ -339,6 +326,7 @@ nav {
 
   border-radius: 8px;
 }
+
 .main-about h3 {
   font-size: 40px;
   font-weight: bold;
@@ -753,6 +741,9 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: flex-start;
+  font-weight: lighter;
+  font-size: 16px;
   gap: 20px;
 }
 
@@ -1108,7 +1099,7 @@ footer {
   }
   .content {
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 0px;
     justify-content: center;
     /* padding: auto 35px; */
     align-items: center;
@@ -1240,6 +1231,7 @@ footer {
     gap: 5px;
     width: 100%;
     height: fit-content;
+    justify-content: center;
     /* margin-left: 100px; */
   }
   .team-member {
