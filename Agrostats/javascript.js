@@ -89,12 +89,12 @@ ScrollReveal({
   reset: true,
 }).reveal(".services-item.reverse .services-image", { delay: 500 });
 
-ScrollReveal({
-  origin: "bottom",
-  distance: "80px",
-  duration: 2000,
-  reset: true,
-}).reveal(".footer-content", { delay: 500 });
+// ScrollReveal({
+//   origin: "bottom",
+//   distance: "80px",
+//   duration: 2000,
+//   reset: true,
+// }).reveal(".footer-content", { delay: 500 });
 
 // Smooth scroll
 document.addEventListener("DOMContentLoaded", () => {
